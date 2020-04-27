@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Person } from 'src/app/shared/models/Person';
 
 @Component({
   selector: 'app-chat-bar',
@@ -20,8 +21,13 @@ export class ChatBarComponent implements OnInit {
       return;
     }
 
+    if (!Person.Nickname) {
+      alert('Bitte Nickname erfassen!');
+      return;
+    }
+
     const timestamp: string = new Date().toLocaleDateString('de');
-    const messageToSend = `${message} - ${timestamp}<br>`;
+    const messageToSend = `<p class='nickname'>${Person.Nickname}<p><p>${message} - ${timestamp}<p>`;
     // const messageToSend = message + '-' + timestamp + '<br>';
 
     // alert(message);
