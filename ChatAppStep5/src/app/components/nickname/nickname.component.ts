@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from 'src/app/shared/models/Person';
+import { Person } from 'src/app/shared/models/person';
 
 @Component({
   selector: 'app-nickname',
