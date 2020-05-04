@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
     <h1>{{title}}</h1>
-    <p>CONTENT: mein sinnfreier Inhalt ;-)</p>
-    <app-chat-bar></app-chat-bar>
+    <app-chat-history [history]="messageHistory"></app-chat-history>
+    <app-chat-bar (submitMessage)="onSubmitMessage($event)"></app-chat-bar>
 </div>
 <app-footer></app-footer>
