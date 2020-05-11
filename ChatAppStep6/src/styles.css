@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+.form-control+button {
+    margin-top: 5px;
+}
+
+.nickname {
+    font-weight: bold;
+    color: green;
+}

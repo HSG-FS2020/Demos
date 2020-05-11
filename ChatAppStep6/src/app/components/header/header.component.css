@@ -1,0 +1,14 @@
+div {
+    height: 100px;
+    border-bottom: 1px solid gray;
+  }
+  /* Variante mit Tag */
+  img {
+    width: 200px;
+  }
+  
+  /* Variante mit Klasse */
+  .logo {
+    width: 200px;
+  }
+  
